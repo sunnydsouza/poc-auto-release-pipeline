@@ -14,3 +14,9 @@ test('includes an optional channel label when provided', () => {
   );
 });
 
+test('supports a custom banner prefix', () => {
+  assert.equal(
+    formatVersionBanner('1.2.3', { prefix: 'Build' }),
+    'Build 1.2.3'
+  );
+});
