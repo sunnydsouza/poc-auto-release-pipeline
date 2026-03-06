@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/sunnydsouza/poc-auto-release-pipeline/compare/v1.1.0...v1.1.1) (2026-03-06)
+
+
+### Bug Fixes
+
+* ignore blank release channels ([b179c16](https://github.com/sunnydsouza/poc-auto-release-pipeline/commit/b179c1615f40b24ccf6daa82b887251801ecf103))
+
 # [1.1.0](https://github.com/sunnydsouza/poc-auto-release-pipeline/compare/v1.0.0...v1.1.0) (2026-03-06)
 
 
