@@ -20,3 +20,10 @@ test('supports a custom banner prefix', () => {
     'Build 1.2.3'
   );
 });
+
+test('ignores a whitespace-only channel label', () => {
+  assert.equal(
+    formatVersionBanner('1.2.3', { channel: '   ' }),
+    'Release 1.2.3'
+  );
+});
