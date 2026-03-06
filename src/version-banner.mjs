@@ -1,8 +1,12 @@
 export function formatVersionBanner(version, options = {}) {
-  const { channel, prefix = 'Release' } = options;
+  if (Object.hasOwn(options, 'channel')) {
+    throw new Error('channel has been renamed to track');
+  }
+
+  const { track, prefix = 'Release' } = options;
   const normalizedVersion = String(version).trim();
   const normalizedPrefix = String(prefix).trim();
-  const normalizedChannel = typeof channel === 'string' ? channel.trim() : channel;
+  const normalizedTrack = typeof track === 'string' ? track.trim() : track;
 
   if (normalizedVersion.length === 0) {
     throw new Error('version is required');
@@ -12,9 +16,9 @@ export function formatVersionBanner(version, options = {}) {
     throw new Error('prefix is required');
   }
 
-  if (!normalizedChannel) {
+  if (!normalizedTrack) {
     return `${normalizedPrefix} ${normalizedVersion}`;
   }
 
-  return `${normalizedPrefix} ${normalizedVersion} [${normalizedChannel}]`;
+  return `${normalizedPrefix} ${normalizedVersion} [${normalizedTrack}]`;
 }
