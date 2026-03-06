@@ -1,3 +1,13 @@
+# [2.0.0](https://github.com/sunnydsouza/poc-auto-release-pipeline/compare/v1.1.1...v2.0.0) (2026-03-06)
+
+
+* feat!: rename banner channel option to track ([0e7efae](https://github.com/sunnydsouza/poc-auto-release-pipeline/commit/0e7efae56f692099d9179fb3748e752f42ee6589))
+
+
+### BREAKING CHANGES
+
+* formatVersionBanner now accepts options.track instead of options.channel.
+
 ## [1.1.1](https://github.com/sunnydsouza/poc-auto-release-pipeline/compare/v1.1.0...v1.1.1) (2026-03-06)
 
 
