@@ -1,0 +1,29 @@
+{
+  "name": "poc-auto-release-pipeline",
+  "version": "0.0.0-development",
+  "private": true,
+  "description": "Generic semantic-release pipeline demo for GitHub Actions",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "test": "node --test",
+    "release:dry-run": "semantic-release --dry-run --no-ci",
+    "simulate:release": "node ./scripts/simulate-release.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sunnydsouza/poc-auto-release-pipeline.git"
+  },
+  "devDependencies": {
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/commit-analyzer": "^13.0.1",
+    "@semantic-release/exec": "^7.1.0",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^11.0.6",
+    "@semantic-release/release-notes-generator": "^14.1.0",
+    "semantic-release": "^24.2.7"
+  }
+}
+
